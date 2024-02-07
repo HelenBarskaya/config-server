@@ -2,12 +2,18 @@ spring:
   h2:
     console:
       enabled: true
+
   datasource:
     url: jdbc:h2:mem:payments
     username: user
     password: password
     driverClassName: org.h2.Driver
+
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: create-drop
+
+  kafka:
+    consumer:
+      isolation-level: read_committed
