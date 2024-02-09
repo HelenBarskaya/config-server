@@ -4,10 +4,10 @@ spring:
       enabled: true
 
   datasource:
-    url: jdbc:h2:mem:payments
+    url: jdbc:postgresql://localhost:5415/payments
     username: user
-    password: password
-    driverClassName: org.h2.Driver
+    password: pass
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
