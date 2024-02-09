@@ -3,5 +3,4 @@ spring:
     bootstrap-servers: localhost:9092
 
 topics:
-  orders: t.orders
-  payments: t.payments
+  orders: outbox.event.order
